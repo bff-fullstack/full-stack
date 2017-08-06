@@ -10,6 +10,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using REST.models;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
 namespace REST
 {
     public class Startup
@@ -44,15 +47,33 @@ namespace REST
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
             }
             else
             {
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseStaticFiles();
 
+            app.UseJwtBearerAuthentication(new JwtBearerOptions
+            {
+                AutomaticAuthenticate = true,
+                AutomaticChallenge = true,
+                
+                TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidIssuer = "test.com",
+
+                    ValidateAudience = true,
+                    ValidAudience = "test.com",
+
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ASSPJDFNNJF{IUSNF{UINSDF{SFNNF{"))
+                }
+            });
+
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

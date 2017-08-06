@@ -54,7 +54,7 @@ namespace REST.Controllers
     
             return new JwtSecurityToken(
                 issuer: "test.com",
-            
+                notBefore: DateTime.UtcNow,
                 audience: "test.com",
                 claims: userClaims,
                 expires: DateTime.UtcNow.AddMinutes(60),
@@ -76,7 +76,7 @@ namespace REST.Controllers
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(JwtRegisteredClaimNames.Sub, user.Client),
                 new Claim("prv", privileges),
-                new Claim("nbf",System.DateTime.UtcNow.ToString())
+                
             };
         }
     }

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using REST.models;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace REST.Controllers
 {
@@ -17,6 +18,7 @@ namespace REST.Controllers
             _RESTContext=dbContext;
         }
         // GET api/values
+        [Authorize]
         [HttpGet]
         public IEnumerable<Creds> Get()
         {
@@ -24,6 +26,7 @@ namespace REST.Controllers
         }
 
         // GET api/values/5
+        [Authorize]
         [HttpGet("{id}")]
         public Creds Get(int id)
         {
@@ -33,6 +36,7 @@ namespace REST.Controllers
         }
 
         // POST api/values
+        [Authorize]
         [HttpPost]
         public void Post([FromBody] Creds entity)
         {
@@ -42,6 +46,7 @@ namespace REST.Controllers
         }
 
         // PUT api/values/5
+        [Authorize]
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]Creds entity)
         {
@@ -51,6 +56,7 @@ namespace REST.Controllers
         }
 
         // DELETE api/values/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
