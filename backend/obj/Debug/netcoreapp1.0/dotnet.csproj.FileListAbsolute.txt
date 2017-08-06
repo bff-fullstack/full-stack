@@ -6,3 +6,11 @@
 /var/angularapps/dotnet/obj/Debug/netcoreapp1.0/dotnet.AssemblyInfo.cs
 /var/angularapps/dotnet/obj/Debug/netcoreapp1.0/dotnet.dll
 /var/angularapps/dotnet/obj/Debug/netcoreapp1.0/dotnet.pdb
+/var/fullstack/backend/bin/Debug/netcoreapp1.0/dotnet.deps.json
+/var/fullstack/backend/bin/Debug/netcoreapp1.0/dotnet.runtimeconfig.json
+/var/fullstack/backend/bin/Debug/netcoreapp1.0/dotnet.runtimeconfig.dev.json
+/var/fullstack/backend/bin/Debug/netcoreapp1.0/dotnet.dll
+/var/fullstack/backend/bin/Debug/netcoreapp1.0/dotnet.pdb
+/var/fullstack/backend/obj/Debug/netcoreapp1.0/dotnet.AssemblyInfo.cs
+/var/fullstack/backend/obj/Debug/netcoreapp1.0/dotnet.dll
+/var/fullstack/backend/obj/Debug/netcoreapp1.0/dotnet.pdb

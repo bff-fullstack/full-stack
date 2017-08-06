@@ -9318,16 +9318,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/var/angularapps/dotnet/dotnet.csproj",
+      "projectUniqueName": "/var/fullstack/backend/dotnet.csproj",
       "projectName": "dotnet",
-      "projectPath": "/var/angularapps/dotnet/dotnet.csproj",
-      "outputPath": "/var/angularapps/dotnet/obj/",
+      "projectPath": "/var/fullstack/backend/dotnet.csproj",
+      "outputPath": "/var/fullstack/backend/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.0"
       ],
       "files": {
-        "lib/netcoreapp1.0/dotnet.dll": "/var/angularapps/dotnet/bin/placeholder/netcoreapp1.0/dotnet.dll"
+        "lib/netcoreapp1.0/dotnet.dll": "/var/fullstack/backend/bin/placeholder/netcoreapp1.0/dotnet.dll"
       },
       "frameworks": {
         "netcoreapp1.0": {
