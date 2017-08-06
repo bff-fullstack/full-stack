@@ -1,4 +1,4 @@
-# ThirdTry
+# Full-Stack Example with Angular 2/4 Front-End and PostgreSQL backend powered by a .NET REST API
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
 
