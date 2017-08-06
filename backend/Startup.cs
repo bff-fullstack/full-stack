@@ -7,8 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-
-namespace dotnet
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Formatters;
+using REST.models;
+namespace REST
 {
     public class Startup
     {
@@ -27,7 +29,9 @@ namespace dotnet
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString =  Configuration["DbContextSettings:ConnectionString"];
             // Add framework services.
+            services.AddDbContext<RESTContext>(options => options.UseNpgsql(connectionString));
             services.AddMvc();
         }
 
