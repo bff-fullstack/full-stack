@@ -1,0 +1,8 @@
+/var/angularapps/dotnet/bin/Debug/netcoreapp1.0/dotnet.deps.json
+/var/angularapps/dotnet/bin/Debug/netcoreapp1.0/dotnet.runtimeconfig.json
+/var/angularapps/dotnet/bin/Debug/netcoreapp1.0/dotnet.runtimeconfig.dev.json
+/var/angularapps/dotnet/bin/Debug/netcoreapp1.0/dotnet.dll
+/var/angularapps/dotnet/bin/Debug/netcoreapp1.0/dotnet.pdb
+/var/angularapps/dotnet/obj/Debug/netcoreapp1.0/dotnet.AssemblyInfo.cs
+/var/angularapps/dotnet/obj/Debug/netcoreapp1.0/dotnet.dll
+/var/angularapps/dotnet/obj/Debug/netcoreapp1.0/dotnet.pdb

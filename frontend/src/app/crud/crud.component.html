@@ -1,0 +1,5 @@
+<div>
+    <button (click)="getValues()">Load Values</button>
+  <label>{{ holder.thevalue | safeHtml}}</label>
+  </div>
+<div [innerHtml]="holder.thevalue | safeHtml"></div>
