@@ -31,6 +31,10 @@ namespace REST.models
                     .HasColumnName("key")
                     .HasColumnType("varchar")
                     .HasMaxLength(500);
+                entity.Property(e => e.Privilege)
+                .HasColumnName("privilege")
+                .HasColumnType("int");
+                
             });
         }
     }
