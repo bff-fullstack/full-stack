@@ -14,3 +14,11 @@ C:/Users/brianfonnemann/Desktop/REST/obj/Debug/netcoreapp1.1/REST.pdb
 /var/coreapps/obj/Debug/netcoreapp1.1/REST.AssemblyInfo.cs
 /var/coreapps/obj/Debug/netcoreapp1.1/REST.dll
 /var/coreapps/obj/Debug/netcoreapp1.1/REST.pdb
+C:\Users\brianfonnemann\Desktop\full-stack\backend\bin\Debug\netcoreapp1.1\REST.deps.json
+C:\Users\brianfonnemann\Desktop\full-stack\backend\bin\Debug\netcoreapp1.1\REST.runtimeconfig.json
+C:\Users\brianfonnemann\Desktop\full-stack\backend\bin\Debug\netcoreapp1.1\REST.runtimeconfig.dev.json
+C:\Users\brianfonnemann\Desktop\full-stack\backend\bin\Debug\netcoreapp1.1\REST.dll
+C:\Users\brianfonnemann\Desktop\full-stack\backend\bin\Debug\netcoreapp1.1\REST.pdb
+C:\Users\brianfonnemann\Desktop\full-stack\backend\obj\Debug\netcoreapp1.1\REST.AssemblyInfo.cs
+C:\Users\brianfonnemann\Desktop\full-stack\backend\obj\Debug\netcoreapp1.1\REST.dll
+C:\Users\brianfonnemann\Desktop\full-stack\backend\obj\Debug\netcoreapp1.1\REST.pdb
