@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using REST.models;
+using System.Security.Cryptography;
+using System.Text;
+
 namespace REST.Controllers
 {
     [Route("api/[controller]")]
@@ -33,15 +36,17 @@ namespace REST.Controllers
         [HttpPost]
         public void Post([FromBody] Creds entity)
         {
+            entity.Key=OneWayHash(entity.Key);
             _RESTContext.Add(entity);
             _RESTContext.SaveChanges();
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]Creds json)
+        public void Put(int id, [FromBody]Creds entity)
         {
-            _RESTContext.Update(json);
+            entity.Key=OneWayHash(entity.Key);
+            _RESTContext.Update(entity);
             _RESTContext.SaveChanges();
         }
 
@@ -58,6 +63,14 @@ namespace REST.Controllers
              }
             else
                 return BadRequest();
+        }
+
+        private string OneWayHash(string value){
+            SHA512 hasher  = SHA512.Create();
+            byte[] hashedBytes;
+
+            hashedBytes= hasher.ComputeHash(Encoding.UTF8.GetBytes(value)) ;
+            return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower(); 
         }
     }
 }
